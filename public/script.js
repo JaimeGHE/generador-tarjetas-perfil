@@ -11,3 +11,13 @@ function generarTarjeta() {
   tarjeta.style.backgroundColor = colorFondo;
   tarjeta.style.color = colorTexto;
 }
+
+function descargarImagen() {
+  const tarjeta = document.getElementById('tarjeta');
+  html2canvas(tarjeta).then((canvas) => {
+    const enlace = document.createElement('a');
+    enlace.download = 'mi-tarjeta.png';
+    enlace.href = canvas.toDataURL('image/png');
+    enlace.click();
+  });
+}

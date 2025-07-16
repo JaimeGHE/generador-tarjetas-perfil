@@ -1,0 +1,36 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
+#tarjeta {
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+#tarjeta h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#tarjeta p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+form.card {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+form .form-control:focus,
+form .form-control-color:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button {
+  transition: background-color 0.2s ease;
+}
