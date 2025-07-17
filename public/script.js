@@ -3,6 +3,7 @@ function generarTarjeta() {
   const bio = document.getElementById('bio').value;
   const colorFondo = document.getElementById('colorFondo').value;
   const colorTexto = document.getElementById('colorTexto').value;
+  const fuente = document.getElementById('fuente').value;
 
   const tarjeta = document.getElementById('tarjeta');
   const previewNombre = document.getElementById('preview-nombre');
@@ -12,6 +13,7 @@ function generarTarjeta() {
   previewBio.textContent = bio || 'Aquí irá tu descripción personal.';
   tarjeta.style.backgroundColor = colorFondo;
   tarjeta.style.color = colorTexto;
+  tarjeta.style.fontFamily = fuente;
 
   const avatarInput = document.getElementById('avatar');
   const avatarPreview = document.getElementById('preview-avatar');
@@ -36,13 +38,16 @@ function generarTarjeta() {
   linksContainer.innerHTML = '';
 
   if (github) {
-    linksContainer.innerHTML += `<a href="${github}" target="_blank">GitHub</a>`;
+    const url = github.startsWith('http') ? github : `https://${github}`;
+    linksContainer.innerHTML += `<a href="${url}" target="_blank">GitHub</a>`;
   }
   if (linkedin) {
-    linksContainer.innerHTML += `<a href="${linkedin}" target="_blank">LinkedIn</a>`;
+    const url = linkedin.startsWith('http') ? linkedin : `https://${linkedin}`;
+    linksContainer.innerHTML += `<a href="${url}" target="_blank">LinkedIn</a>`;
   }
   if (web) {
-    linksContainer.innerHTML += `<a href="${web}" target="_blank">Web</a>`;
+    const url = web.startsWith('http') ? web : `https://${web}`;
+    linksContainer.innerHTML += `<a href="${url}" target="_blank">Web</a>`;
   }
 
   tarjeta.classList.remove('visible');
