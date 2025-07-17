@@ -2,24 +2,6 @@ body {
   font-family: system-ui, sans-serif;
 }
 
-#tarjeta {
-  transition: all 0.3s ease;
-  border-radius: 1rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  padding: 2rem;
-}
-
-#tarjeta h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-#tarjeta p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 form.card {
   border-radius: 1rem;
   border: none;
@@ -33,4 +15,50 @@ form .form-control-color:focus {
 
 button {
   transition: background-color 0.2s ease;
+}
+
+.tarjeta {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.tarjeta.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: none;
+}
+
+.tarjeta h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tarjeta p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.enlaces a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  border-bottom: 1px dashed transparent;
+  transition: all 0.2s ease;
+}
+
+.enlaces a:hover {
+  border-bottom-color: currentColor;
 }
