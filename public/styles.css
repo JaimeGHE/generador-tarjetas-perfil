@@ -107,3 +107,11 @@ body.modo-oscuro a {
 body.modo-oscuro h1 {
   color: #ffffff;
 }
+
+.modo-oscuro-toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
