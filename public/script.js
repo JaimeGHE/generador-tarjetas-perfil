@@ -63,3 +63,17 @@ function descargarImagen() {
     enlace.click();
   });
 }
+
+function toggleModoOscuro() {
+  const body = document.body;
+  const activado = body.classList.toggle('modo-oscuro');
+  localStorage.setItem('modoOscuro', activado ? 'true' : 'false');
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const activado = localStorage.getItem('modoOscuro') === 'true';
+  if (activado) {
+    document.body.classList.add('modo-oscuro');
+    document.getElementById('modoOscuro').checked = true;
+  }
+});
