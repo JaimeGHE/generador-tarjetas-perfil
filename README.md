@@ -2,7 +2,7 @@
 
 Este proyecto es una aplicación web que permite crear una **tarjeta de contacto personalizada** desde el navegador.
 
-**Estado**: este es un proyecto en desarrollo, con muchas limitaciones y usado para aprender y practicar HTML, CSS y JavaScript.
+**Estado**: este es un proyecto en desarrollo, con muchas limitaciones y usado para practicar HTML, CSS y JavaScript.
 
 ## 📦 Tecnologías utilizadas
 
